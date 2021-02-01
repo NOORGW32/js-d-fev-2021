@@ -7,7 +7,58 @@
 </head>
 <body>
     <script>
-        // 14-calcul-boolean.html
+        // 14-calcul-boolean.html 
+
+        // chiffre : 5 opérations possibles
+        let a = 2 + 3 - 2 * 3 / 4 ** 3;
+        
+        // string : concaténation 
+        let b = "toc";
+        let c = "tic" ;
+        let bruit = `${b} ${c}`; // toc tic
+
+        // les booleans eux aussi dispose d'opérateur qui permettent de faire des calculs
+        // 3 opérateurs à connaitre : 
+        // && => ET => é commercial / esperluette
+        // || => OU => Pipe altGr + touche 6 en haut
+        // ! => NOT 
+
+        // exemple de calcul boolean 
+        let d = 12 > 3 && 45 < 2 ;
+        //    = true   &&   false 
+        //    = false
+        console.log(d);
+        // && regarder à gauche et à droite du symbole 
+        // false && false = false
+        // true && false = false
+        // false && true = false
+        // true && true = true // 2 conditions soient true simultanément 
+                               // pour retourner true 
+
+        let e = 12 > 3 && 45 > 2 ;
+        //    =  true  &&  true ;
+        //    = true 
+        console.log(e);
+
+        // calcul logique 
+
+        let f = 30 > 12 || 24 < 50 ;
+        //    =  true   ||  true
+        //    =  true 
+        console.log(f);
+        // || regarder à gauche et à droite du symbole 
+        // false || false = false 
+        // true || false = true 
+        // false || true = true 
+        // true || true = true // 1 seule condition doit être true pour retourner true
+
+        let g = 30 < 2 || 12 > 3 ;
+        //    =  false || true
+        //    = true
+        console.log(g);
+
+        // if(){ }
+
     </script>
 </body>
 </html>
