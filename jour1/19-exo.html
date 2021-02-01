@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let localisation = [
+            75 , // "75"
+            "rue du Paradis",
+            10 ,
+            "Paris",
+            123,
+            255
+         ];
+        // J'habite à Paris dans le 10ème à l'adresse gps suivante : lat 123 - long 255
+        let adresse = `J'habite à ${localisation[3]} dans le ${localisation[2]}ème à l'adresse gps suivante : lat ${localisation[4]} - long ${localisation[5]}`;
+
+        console.log(adresse);
+    </script>
+</body>
+</html>
