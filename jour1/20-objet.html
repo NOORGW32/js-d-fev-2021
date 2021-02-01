@@ -8,6 +8,39 @@
 <body>
     <script>
         // 20-objet.html
+        // Dernier type de variable disponible en javascript 
+
+        // chiffre : number
+        let a = 2;
+        // string
+        let b = "toto";
+        // boolean 
+        let c = 3 > 2;
+        // tableau : array
+        let d = ["a", "b", 12]; // crochets
+
+        // objet : object
+        // comme pour les tableaux variables complexes
+        // il est possible de stocker plusieurs valeurs dans 1 seule variable 
+        // utilise des accolades 
+        let e = { // 6 valeurs 
+            prenom : "Alain",
+            nom : "Dufour",
+            age : 22,
+            unite : "ans",
+            francais : false,
+            competences : ["js", "html"]
+        };
+        // dans un tableau => index (position)=> permet de récupérer les différents items dans le tableau
+        // clé : valeur string , (passer à une autre clé: valeur)
+        // un objet peut stocker plusieurs ET de n'importe quel type 
+        // en PHP quand on veut créer un objet => il faut d'abord créer une class E
+        // $e =  new E 
+        // $e->prenom (en PHP)
+        // en js 
+        console.log( e.prenom );
+        // html 
+        console.log(e.competences[1]);
     </script>
 </body>
 </html>
