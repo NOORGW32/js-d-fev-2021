@@ -1,0 +1,40 @@
+Malik HARRIZ 
+malik.h@webdevpro.net
+
+Javascript => pendant 2 jours
+jQuery => pendant 3 jours 
+
+------------------------
+
+support de cours sur internet 
+
+Javascript :
+url : https://formation.webdevpro.net/js-initiation
+(dans la barre d'adresse pas dans Google)
+login : js
+mdp : js 
+(attention login et mot de passe en minuscule)
+
+------------------------
+
+Pouvez vous dans le bureau de votre ordinateur créer un 
+nouveau dossier => javascript 
+
+dans ce dossier, pouvez vous créer un nouveau sous dossier 
+jour1 (afin de bien  structurer notre travail nous allons tous les jours créer un nouveau dossier)
+
+------------------------
+
+démarrer votre outil de codage (IDE : Integrated Development Environnement)
+
+=> Visual Studio Code 
+
+=> Fichier > Ouvrir le dossier > sélectionner le dossier javascript qui est sur votre bureau 
+
+=> créer le fichier 01-presentation.html dans le dossier jour1
+
+
+
+
+
+

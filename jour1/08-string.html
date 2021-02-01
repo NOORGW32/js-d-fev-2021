@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 08-string.html 
+        // nous venons de voir les chiffres => number 
+        let a = 12 ;
+        let b = 4.3 ; // chiffres à virgule . pour séparer les décimales ET ne pas 
+                     // mettre d'espace dans la valeur 
+        let c = -12 ; // chiffre négatif pas d'espace entre le symbole - et le chiffre 
+
+        // 2ème type de variable => texte == chaine de caractère == string 
+
+        let auteur = "Victor Hugo"; // double quote - guillemet
+        let auteur2 = 'George Sand' ; // apostrophe - quote simple
+        let auteur3 = `Edgar Allan Poe` ; // Windows AltGr + 7 en haut - backtick 
+                                          // https://webdevpro.net/raccourcis-clavier-pour-coder-sur-macos/
+
+        // on vient de voir qu'avec des chiffres on peut faire des calculs 
+        // addition / soustraction / division / multiplication / puissance
+
+        // attention avec les string on peut effectuer aussi des opérations : 1 seul disponible
+        // concaténation = additionner des strings
+
+        let rue = "75 rue du Paradis";
+        let codePostal = "75001";
+        let ville = "Paris";
+
+        // addition les valeurs stockées rue codePostal et ville => concaténation
+
+        let rueComplete = rue + codePostal + ville ;
+        // en PHP $rueComplete = rue . codePostal . ville ;
+
+        console.log(  rueComplete );
+        // espace entre la rue le cp et la ville
+        let rueCompleteEspacee = rue + ` ` + codePostal + " " + ville ;
+        console.log(  rueCompleteEspacee );
+        // attention seuls les espaces entre les " " sont pris en compte
+        // les autres espaces sont facultatifs 
+        // pause déjeuner => rdv 1h => 13h35
+        // github 
+    </script>
+</body>
+</html>
