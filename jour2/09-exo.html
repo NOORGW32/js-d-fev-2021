@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 30 ;
+        let b = 40 ;
+        let c = 12 * 4 < 44 / 3 ; // boolean parce qu'il y a le symbole <
+        //    = 48 < 14.666666
+        //  c  = false 
+
+        if( a >= b ){
+        // 30 >= 40
+        //  false 
+            console.log("verif 1 ok"); // je ne vois pas cette ligne 
+            // dans la console
+        }
+
+        if( c >= b ){
+        // false >= 40 
+        // 0 >= 40  // autre exemple de transtypage  true => 1 // false => 0
+        // false
+            console.log("verif 2 ok"); //ne s'affiche pas dans la console
+        }
+
+        if( c >= b || a < b){
+        //  false >= 40 || 30 < 40
+        //      0 >= 40 || 30 < 40
+        //      false || true
+        //      true 
+            console.log("verif 3 ok"); // on va le voir dans la console
+        }
+
+    </script>
+</body>
+</html>
