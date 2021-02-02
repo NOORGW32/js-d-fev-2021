@@ -8,6 +8,80 @@
 <body>
     <script>
         // 03-operateur-unaire.html
+        // addition en utilisant 3 variables
+
+        let a = 2 ;
+        let b = 3 ;
+        let c = a + b ; // 5
+        console.log(c);
+
+        // les mêmes traitement MAIS avec 1 seule variable 
+
+        let d = 2 ;
+            d = d + 3 ; // addition à elle même la variable et on le restocke dans le lui même
+        console.log(d);
+
+        // attention le = en informatique n'a pas le même sens que le = en mathématique
+        // en Math 
+        // x = x + 1
+        // x -x = x -x + 1
+        // 0 = 1 => impossible 
+        // = des math c'est le == 
+
+        // en informatique 
+        // y = y + 1 ;
+        //   = calculer la partie droite de l'égalité 
+        //   = 0 + 1
+        // y = 1 STOCKER
+
+        let e = 10 ;
+            e = e + 5 ;
+            e = e + 4;
+            e = e + 3;
+        // valeur de e ??? 22 !! 
+
+        let f = 10 ;
+            f += 5 ; // f = f + 5;
+            f += 4 ; // f = f + 4;
+            f += 3 ; // f = f + 3 ;
+        // += opérateur unaire 
+        console.log( f );
+
+        // opérateur unaire fonctionne avec les chiffres
+        // opérateur unaire fonctionne aussi avec les textes 
+
+        let auteur = "Victor";
+            auteur = auteur + " ";
+            auteur = auteur + "Hugo"; // Victor Hugo
+
+        let auteur2 = "George";
+            auteur2 += " "; // auteur2 = auteur2 + " " ;
+            auteur2 += "Sand";  // auteur2 = auteur2 + "Sand" ;
+        console.log(auteur2);
+        //  nouvelle technique de concaténation  !! avec +=
+
+        // en PHP la syntaxe à utiliser est la suivante .=
+
+        // valable QUE pour les chiffres 
+
+        // 1ère manière d'augmenter de + 1 la valeur stockée dans i
+        let i = 4 ;
+            i = i + 1;
+
+        // 2ème manière
+        let j = 4 ;
+            j += 1 ; // j = j + 1;
+
+        // 3ème manière d'écrire la même chose 
+        let k = 4 ;
+            k++ ; // k += 1 // k = k + 1
+        
+        //variable++ => ne fonction QUE avec des chiffres augmente +1
+
+        // k+++ n'existe pas augmenter +2
+        k += 2 ; //k+++ pas possible
+        k += 3 ; // k++++ pas possible 
+
     </script>
 </body>
 </html>
