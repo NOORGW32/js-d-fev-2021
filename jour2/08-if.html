@@ -10,6 +10,56 @@
         // 08-if.html
 
         // si vous avez bien compris les boolean => if => très simple 
+
+        // if(){}
+
+        // vous pouvez mettre un espace entre le if et les parenthèses => facultatif
+        
+        // dans les parenthèses vous avez un booléen 
+        // si le boolean dans les parenthèses est true ALORS javascript exécute le code dans les accolades
+        // si le boolean dans les parenthèses est false ALORS le contenu des accolades est ignoré
+        if( 20 > 2 ){
+           // true 
+           // exécuter les instructions dans les { }
+           console.log("ici");
+        }
+
+        if( "bonjour" == "toto" ){
+            // false 
+        }
+        // passer à la suite 
+        // dans les parenthèses du if => TOUJOURS un boolean 
+
+        if( 10 > 2 && 30 < 3 ){
+          // true &&  false 
+          // false => donc on ne va pas exécuter le contenu des accolades du if 
+        }
+
+
+        let age = 70 ; // crée une variable
+
+        if( age >= 0 && age <= 20 ){
+        //  70 >= 0  && 70 <= 20
+        //    true   &&   false
+        //        false
+            console.log("vous êtes un adolescent !");
+        }
     </script>
 </body>
 </html>
+<!-- 
+    créer le fichier 09-exo.html avec une balise script
+
+    // a = 30
+    // b = 40
+    // c = 12 * 4 < 44/3
+    // 1/ vérifier est ce que a supérieur ou égal à b
+    // si c'est vrai écrire dans la console verif 1 ok
+
+    // 2/ vérifier est ce que c supérieur ou égal à b
+    // si c'est vrai écrire dans la console verif 2 ok
+
+    // 3/vérifier est ce que c supérieur ou égal à b OU a inférieur à b
+    // si c'est vrai écrire dans la console verif 3 ok
+
+-->
