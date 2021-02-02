@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 05-transtypage.html 
+
+        let a = 20 ;
+        let b = "px";
+        let c = a + b ; 
+
+        //    = 20 + "px" // additionner un number avec un string 
+        //    = "20" + "px" // transformer number 20 => "20" => transtypage 
+                            // fait de manière automatique par javascript 
+                            // dans d'autres langages comme le  C => erreur MAIS pas en javascript 
+        //     = "20px" ; // concaténation 
+        console.log(c);
+
+        let d = 30 ;
+            d += 20 ; // 50 
+        let temp = d ;
+            d += "cm"; // "50" + "cm" => "50cm"
+        console.log(d);
+
+        // "50cm"  => "50%"
+
+        console.log(`${d.substr(0,2)}m`);
+        console.log(`${temp}%`);
+
+        // dernier exemple le transtypage 
+
+        let f = "cm" ;
+
+        let e = 12 + 3 + f + 15 + 36 ;
+        //    =  15 + f + 15 + 36
+        //    =  15 + "cm" + 15 + 36
+        //    =  "15" + "cm" + 15 + 36
+        //    =  "15cm" + 15 + 36
+        //    =  "15cm" + "15" + 36
+        //    =  "15cm15" + 36
+        //    =  "15cm15" + "36"
+        //    =  "15cm1536"
+        console.log(e);
+
+    </script>
+</body>
+</html>
