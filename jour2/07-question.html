@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*vous allez écrire du css*/
+        p{
+            color : blue;
+            font-size: 200px;
+        }
+        /*cette balise permet d'ajouter du css comme la balise link
+        css exécuté que dans le contexte de la page actuelle */
+        /* balise link permet d'externaliser le css 
+        => fichier .html où il n'ya QUE du html
+        => .css où il n'y a QUE du css  */
+    </style>
+    <link rel="stylesheet" href="07-style.css">
+</head>
+<body>
+    <!-- 
+        Yoann 
+        <style>…</style>
+        balise style => il faut la mettre dans la balise <head></head>
+
+        <sript type="text/javascripte"id="rocket-delay-js-js-after">…</script>
+
+        coquille
+        <script type="text/javascript" id="rocket-delay-js-js-after">…</script>
+        => permet d'écrire du javascript là où il y a les ... 
+        => dans cette balise vous avez 2 attributs 
+            type="text/javascript" => quand le navigateur html + js dans les années 2000
+            dans la balise script tu vas avoir du javascript dans la balise script 
+            à partir de 2015 cet attribut est devenu facultatif
+
+            id="rocket-delay-js-js-after"
+            permettre de sélectionner la balise script et d'effectuer des modifications
+
+
+        style iid=
+            style => c'est une balise mais ça peut aussi être un attribut
+            taille de police 200px
+            <p style="font-size:200px" id="texte">bonjour</p>
+            
+            iid= n'existe pas  id= est un attribut dans la balise 
+
+        <style src="https://www
+
+        <style></style>
+        <link rel="stylesheet" href="07-style.css">
+        Mais <style src="..."></style> n'existe pas 
+
+        <nosript>…</sript>
+        coquille 
+        <nosript>…</sript> n'existe pas
+
+        <noscript>...</noscript>  => existe 
+        permet de dire au navigateur ce qu'il doit afficher si jamais l'internaute à désactivé javascript 
+
+
+        juste une question, aborderons nous ce codage, afin que je puisse comprendre?
+        root{--wp-admin-theme_color: blue#007cba}
+
+        :root{
+            --wp-admin-theme_color: blue #007cba
+        }
+        variable css => depuis 2017, css a été enrichi (ajouter de nouveaux mots clés)
+        root{
+           /* sélecteur css qui contient des variables qui vont s'appliquer à tout le site internet */ 
+           --toto /*variable css */
+           --titre-principal : 30px;
+           /*créer une variable css qui stocke la valeur 30px */
+        }
+
+        h1{
+            font-size: var( --titre-principal );
+            /* font-size : 30px; */
+        }
+    -->
+
+    <h1>titre principal</h1>
+    <div>
+        <p>lorem</p>
+    </div>
+    <script>
+        // javascript
+        let formationJsJs = "bonjour les amis amis";
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+p{
+    font-size: 200px;
+}
+
+:root{
+    /*stocker les variables que tu vas pouvoir utiliser partout dans ton site */
+    --orange : #ffc75f;
+    --blue : #75cfb8;
+    --taille : 80px;
+    --bordure : 2px solid var(--orange);
+    --bordure-bleu : 2px solid var(--blue);
+    --c : #007cba;
+    --b : blue;
+}
+
+h1{
+    border : var( --bordure );
+    color : var( --orange );
+    font-size: var( --taille );
+    text-align: center;
+}
+div{
+    border : var( --bordure-bleu );
+    display: flex;
+    justify-content: center;
+}
+ p{
+    background:var( --orange );
+    margin: 0;
+} 
