@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 2;
+            a++; // a += 1 // a = a + 1;
+            a += 30 ;
+            a += 12 ;
+            a += "minutes";
+            a += 30 ;
+            a += "secondes";
+            console.log(a); // 45minutes30secondes
+
+        let b = 30;
+        let c = 100;
+        let d = "heures";
+        let e = 59;
+
+        let f = b + c + d + e ;
+
+        console.log( f ); // 130heures59
+
+        // Lucie 
+
+        let g = "j'ai une Peugeot";
+        //    =  012345
+
+        // comment remplacer le mot Peugeot par Renault
+
+        // plusieurs solutions possibles 
+
+        // recherché où est la position du mot dans la phrase ??? 
+        // les textes => fonctionne un peu comme un tableau
+
+        // Méthode manuelle => 30 positions dans la chaine de caractère 
+
+        g.substr(0,30); // j'ai une voiture de la marque 
+
+        let h = `${g.substr(0,30)}Renault` ;
+        console.log(h);
+
+        console.log(g.search("Peugeot"));
+
+        let i = `${g.substr(0,g.search("Peugeot"))}Renault`
+
+        console.log(i);
+
+    </script>
+</body>
+</html>
