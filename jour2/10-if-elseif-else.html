@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 10-if-elseif-else.html
+        // on vient le voir la structure if(){}
+
+        // en + du if il est possible ajoute les syntaxes suivantes
+
+        let distance  = 100 ; // 10 // 3
+
+        if(distance < 10){
+        // 100 < 10
+        // false 
+            console.log("condition 1 vraie");  // il sort de la structure 
+            // les else if suivants et le else sont ignorés 
+        }
+        else if(distance < 30 ){
+            // 100 < 30 
+            // false 
+            console.log("condition 2 vraie"); // il sort de la structure 
+            // le else if suivant et le else sont ignorés 
+        }
+        else if(distance < 60 ){
+            // 100 < 60 
+            // false 
+            console.log("condition 3 vraie");
+        }
+        else { // le else s'exécute QUAND TOUS les if() / else if() sont false
+            console.log("distance non conforme");
+        }
+
+        // dans les parenthèses de if => TOUJOURS des booleans 
+        // dans mon exemple 
+        // 1 if 
+        // 2 else if() => vous pouvez mettre autant de else if que vous voulez
+        // il est possible d'avoir 0 else if()
+        // 1 else => il n'est possible d'en avoir 1 seul ou 0
+        // else est OBLIGATOIREMENT le dernier de la structure !! 
+</script>
+</body>
+</html>
