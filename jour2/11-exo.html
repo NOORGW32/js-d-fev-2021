@@ -8,13 +8,16 @@
 <body>
     <script>
         let ville = "Marseille" ;
-
+        let ville92 = ["Boulogne" , "Clamart" , "Montrouge" ];
         // structure if else if else 
 
         if( ville == "Paris" ){
             console.log("vous habitez à Paris");
         }
-        else if(ville == "Boulogne" || ville == "Clamart" || ville == "valeur" ){
+        else if( ville92.includes(ville)){ // "Marseille" != ["V1","V2"]
+            console.log("vous habitez dans le 92 sous forme de tableau");
+        }
+        else if(ville == "Boulogne" || ville == "Clamart" || ville == "Montrouge" ){
             //     false            ||  false             ||    false
             //     false                                  || false
             //                        false
@@ -25,7 +28,11 @@
         }
         else {
             console.log("vous habitez hors d'Ile de France");
-        }
+        }// rdv 15h36 bon café 
+        // boucle (chapitre 4)
+
+         
     </script>
 </body>
 </html>
+
