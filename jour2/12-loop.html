@@ -8,6 +8,56 @@
 <body>
     <script>
         // 12-loop.html
+
+        // nous venons de voir la structure if(){} else if(){} else{} 
+        // grâce à cette structure nous allons pouvoir exécuter du code à certaine condition
+
+        // si la personne a bien saisi ses identifiants correctement => il peut lire ses emails
+        // si le numéro de carte bleu est correct && le crypto && date d'expiration => paiement est effectué
+        // si on est administrateur d'un site internet => supprimer des articles qu'un autre utilisateur a créé  
+
+        // 2ème type de structure boucle (loop)
+
+        // éviter à l'informaticien de répéter la même instruction plusieurs fois dans son code 
+        // écrit 1 fois => javascript qui va les répéter 
+
+        // for(){}
+        // dans les parenthèses 3 instructions 
+        // 1ère instruction : crée une variable => le nom i est habitude => incrément
+        // i est un chiffre (number) que l'on va augmenter , i est une variable que l'on va incrémenter 
+        // 2ème instruction boolean
+        // condition de sortie de la boucle ...  
+        // 3ème instruction 
+        // augmentation de la variable i 
+        // i = i + 1
+        // i += 1
+        // i++
+
+        for( let i = 2 ; i < 3 ; i++ ){
+        //   let i = 0 ; crée la variable i qui stocke la valeur 0
+        //               n'est exécutée 1 seule fois 
+                    //  i < 3
+                    //  0 < 3
+                    // true  => exécuter les instructions dans les accolades de for
+                    // i++ =  i = i + 1
+                    //        i = 0 + 1
+                    //        i = 1
+                    // i < 3
+                    // 1 < 3
+                    // true => exécuter les instructions dans les accolades de for
+                    // i++ =  i = 1 + 1 
+                    // i++ =  i = 2
+                    // i < 3
+                    // 2 < 3
+                    // true => exécuter les instructions dans les accolades de for
+                    // i++ =  i = i + 1  
+                    // i++ =  i = 2 + 1  
+                    // i++ =  i = 3
+                    // i < 3
+                    // 3 < 3
+                    // false => je sors de la boucle // arrête de répéter 
+            alert(i);
+        }
     </script>
 </body>
 </html>
