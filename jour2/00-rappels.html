@@ -1,0 +1,187 @@
+Javascript :
+url : https://formation.webdevpro.net/js-initiation
+(dans la barre d'adresse pas dans Google)
+login : js
+mdp : js 
+(attention login et mot de passe en minuscule)
+
+--------------------
+
+https://github.com/webdevproformation/js-d-fev-2021
+
+
+&& ||
+objet
+
+--------------------
+
+javascript => langage CLIENT (exécuté dans la navigateur web)
+
+pour exécuter du javascript il faut 2 choses
+
+=> dans une page html 
+=> écrire le js dans une balise script 
+(ou par la suite aussi créer une fichier .js)
+
+---------------------------  
+
+en informatique => programme 
+
+un des élement clé des programmes c'est les VARIABLES 
+
+en javascript 5 types de variables 
+
+- chiffres (number)
+- texte (string)
+- boolean
+- tableau (array)
+- object  (object)
+
+=> chaque type de variable va avoir un certain nombre d'opérations / de calcul que l'on va pouvoir faire 
+=> utilise ces variables de manières différentes 
+
+--------------------------- 
+
+- chiffres (number)
+
+let a = 1 ; // entier
+let b = -2 ; // entier négatif
+let c = 1.4; // chiffre à virgule
+let d = Infinity ; // l'infini 4/0 (dans d'autres langages => erreur mais pas en js )
+
+opérations :
+- addition  +
+- soustraction - 
+- multiplication *
+- division / 
+- puissance ** 
+
+--------------------------- 
+
+- texte (string)
+
+let e = "bonjour";
+let f = 'hello';
+let g = `hola` ;
+
+opération :
+concaténation 
+
+let h = `${e} ${f} ${g}`; // bonjour hello hola
+
+--------------------------- 
+
+- boolean
+
+valeur logique = si j'ai une voiture qui roule à 130 km (condition)
+pendant 2 h = 130 * 2 == 260 
+
+let i = true ;
+let k = false ; 
+// attention true et false SONT des MOTS clés du langages javascript 
+// 10
+
+pour obtenir true ou false on va réaliser des COMPARAISONS entre deux string ou deux nombre 
+
+let l = 20 > 2 ; // true
+// > < >= <= != == 
+
+let g = "salut" == "bonjour" ; // false 
+ne pas confondre le symbole = STOCKER une valeur dans une variable
+ne pas confondre le symbole == COMPARER une valeur avec une autre valeur 
+
+opérations :
+&& ET
+|| OU 
+!  NOT 
+
+calculs booleans 
+
+2 + 3 = 5 // addition classique 
+-- 
+false && false = false
+true && false = false 
+false && true = false 
+true && true = true 
+=> si les deux conditions autours du symbole && sont true Alors => récupére true 
+sinon pour les autres cas => false 
+
+=> si internet de votre banque => page login et mot de passe 
+UNIQUEMENT lorsque le login ET le mot de passe sont corrects => accéder à votre profil
+si je me trompe sur le login => NON
+si je me trompe sur le mot de passe => NON
+si je me trompe sur le login et le mot de passe => NON
+
+---- 
+|| 
+false || false = false 
+true || false = true
+false || true = true 
+true || true = true 
+=> si une condition autour du symbole || est true alors => on récupère true
+=> sinon c'est false  
+
+=> Paris 
+=> Montreuil
+=> Montrouge  => Ile de France 
+
+=> Marseille  => tu n'habites pas en Ile de France
+=> Lille   => tu n'habites pas en Ile de France
+
+---- 
+! NOT 
+
+!true = false 
+!false = true 
+
+vérifier que la personne est connecté au site internet 
+let is_connected = true ;
+!is_connected 
+
+------------------------
+
+number / string / boolean (valeurs primitives)
+tableau / objet (valeurs scalaires)
+
+------------------------
+
+- tableau (array) 
+- stocker plusieurs valeurs dans une seule variable 
+let m = [ "a", 123 , "cm", "px", "#000000" ];
+         0
+// vous stocker dans la variable m, 5 valeurs 
+
+// si je veux utiliser une valeur stockée dans la variable m => 
+// il faut récupère la position de l'élement dans le tableau : index 
+// 1er élément : m[0]
+// dernier : m[4]
+
+let n = [2 , 3 ];
+
+let resultat = n[0] + n[1];
+let resultat = 2 + 3; // 5
+
+------------------------
+
+- object  (object) 
+// variable qui contient plusieurs valeurs 
+// les positions des éléments dans l'objet ont un nom : clé / propriété
+
+let o = { 
+    age : 30 ,
+    estEtudiant : false ,
+    vehicules : [ "VW","Renault" ],
+    adresse : {
+        rue : "75 rue du Paradis",
+        cp : 10,
+        ville : "Paris"
+    },
+    prenom : "Pierre"
+};
+
+// très pratique => mieux ranger ton code dans une variable 
+// écrit 7 variables
+// avantage par rapport aux tableaux => le nom de la clé (qui peut être mis n'importe où dans l'objet )
+console.log(o.prenom) ;
+o.vehicules[0] ; // VW
+o.adresse.ville ; // Paris 
