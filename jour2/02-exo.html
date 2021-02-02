@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let formation = {
+            sujet : "javascript",
+            duree : 5 ,
+            unite : "jours",
+            sujets : [ "variable", "if", "DOM" ]
+        };
+
+        let semaine = [ "Lundi", "Mardi", "Mercredi" ];
+
+        //Je suis une formation en javascript d'une durée de 5 jours 
+        let phrase1 = `Je suis une formation en ${formation.sujet} d'une durée de ${formation.duree} ${formation.unite}`;
+        console.log(phrase1);
+
+        //Lundi , j'apprends les variables 
+        let phrase2 = `${semaine[0]}, j'apprends les ${formation.sujets[0]}s`;
+        console.log(phrase2);
+
+        // Mardi, je découvre les conditions et le mot clé if 
+        let phrase3 = `${semaine[1]}, je découvre les conditions et le mot clé ${formation.sujets[1]}`;
+        console.log(phrase3);
+
+    </script>
+</body>
+</html>
