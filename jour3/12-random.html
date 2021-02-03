@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // stocker la valeur une fois pour toute et ne plus appelé
+
+        
+        let r ;
+        let nombre = localStorage.getItem("nombre-aleatoire");
+        // une fois que le chiffre aléatoire est généré => persister
+        // stocker pas dans la RAM => mémoire vive
+        // stocker dans la mémoire morte > disque dur 
+        console.log(nombre);
+        if( nombre != undefined ){
+            r = nombre ;
+        }else {
+            r = parseInt(Math.random() * 100);
+            localStorage.setItem( "nombre-aleatoire", r ) ;
+        }
+
+        console.log( r );
+    </script>
+</body>
+</html>
