@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            "5 x 2 = 10"
+            "5 x 3 = 15"
+            "5 x 4 = 20"
+            "5 x 5 = 25"
+            "5 x 6 = 30"
+            "5 x 7 = 35"
+
+            soit je prends la suite 2 3 4 ... => i
+            minimum 2
+            maximum 7 < 8 ou 7 <= 7
+            augmente de + 1 à chaque ligne
+            soit je prends la suite 10 15 20  ... => i
+            minimum 10 
+            maximum 35 < 36 ou 35<=35
+            augmente de + 5 à chaque ligne =>  i = i + 5 ou i += 5
+        */
+
+        console.log("solution1");
+        for(let i = 2 ; i < 8 ; i++){
+            let phrase = `5 x ${ i } = ${ i * 5}`;
+            console.log(phrase);
+        }
+        console.log("solution2");
+        for(let i = 10 ; i <= 35 ; i += 5){
+            let phrase = `5 x ${ i / 5} = ${ i }`;
+            console.log(phrase);
+        }
+    </script>
+</body>
+</html>
