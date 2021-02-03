@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 13-objet-suite.html
+        // ajouter des informations complémentaires sur les objets
+        // des concepts en + que l'on va rajouter 
+        // un objet peut stocker plusieurs valeurs 
+        // clé : valeur  ,
+        let livre = { 
+            titre : "Notre Dame de Paris", // propriété de l'objet livre 
+            dtPublication : 1830 ,
+            prix : 15.2 ,
+            sommaire : ["partie1", "partie2", "partie3" ],
+            auteur : { 
+                prenom :"Victor",
+                nom : "Hugo"
+            },
+            description : function (){ // il est possible de stocker des fonctions 
+                                        // METHODE de l'objet livre
+                console.log("cette clé est appelée une méthode");
+            }
+        };
+        // si je veux appeler une fonction qui est stockée dans un objet, voici la syntaxe à utiliser 
+
+        livre.description() ; // appeler la méthode description
+        // malik.h@webdevpro.net
+
+    </script>
+</body>
+</html>
+<!-- 
+    créer un nouveau fichier 14-exo.html avec une balise script
+
+    créer un objet 
+        nom rectangle 
+        cet objet contient les propriétés suivantes 
+            largeur = 40
+            hauteur = 10 
+
+        cet objet contient des méthodes suivantes 
+            aire
+                cette méthode contient des instructions 
+                    variable l = 20
+                    variable h = 12
+                    concaténation écrire la phrase suivante 
+                        un rectangle de largeur 20 et de hauteur 12 a une aire de 20 * 12 
+
+        appeler la méthode aire de l'objet rectangle 
+
+-->
