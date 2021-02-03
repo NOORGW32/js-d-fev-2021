@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 11-return.html
+
+        // créer les fonctions
+        function a (){ }
+
+        // appeler une fonction 
+        a();
+
+        // une fonction peut avoir avoir des paramétres
+
+        function b ( longueur , largeur ){ }
+
+        // appeler une fonction qui dispose de paramètres 
+        b( 12 , 14 );
+        b( 2 , 4 );
+        // si je veux réexécuter les instructions stockées dans la fonction 
+        // il faut appeler à nouveau la fonction 
+
+        // en plus de ce que l'on vient de voir, vous pouvez ajouter un mot clé dans la fonction return (mot clé !! comme let true, if , for , [ ] )
+
+        function c ( duree ){
+            let nbHeure = parseInt(duree / 60) ;
+            let nbMinute = duree - (nbHeure * 60) ;
+            let resultat = `${nbHeure}h${nbMinute}`;
+            console.log( resultat );
+        }
+        c( 235 );
+        c( 742 );
+        c( 812 );
+        c( 12 );
+        // parseInt( 35.44 ) ; // 35 permet de récupérer la partie entière du chiffre
+        // Math.round( 35.44 ) ; // 35 permet de récupérer  la partie entière du chiffre
+        // c est une fonction qui permet de convertir les durées exprimées en minutes => heure
+        // duree => en minutes => en heure 
+        // 60min => 1h
+        // 70min => 1h10
+
+        // 120 => 
+        // 130 / 60 = 2.166666666 => 2 h => nbHeure 
+        // 130 - (2 * 60) = 10 minutes 
+        // concaténation 
+
+        // j'ai besoin du résultat calculé par la fonction pour l'utiliser dans un autre calcul 
+
+        function dureeRecette( duree ){
+            let nbHeure = parseInt(duree / 60) ;
+            let nbMinute = duree - (nbHeure * 60) ;
+            let resultat = `${nbHeure}h${nbMinute}`;
+            return resultat ;
+        }
+
+        // avec le mot clé return je vais pouvoir récupérer le resultat qui a été calculé dans la fonction pour le réutiliser ailleurs (par exemple dans un autre calcul)
+
+        let dureeCuissonTarte = dureeRecette( 132 );
+        // dans la variable dureeCuissonTarte stocker le résultat calculé dans la fonction dureeRecette
+
+        // je vais pouvoir utiliser cette variable dans un autre calcul 
+
+        let phrase = `Pour cuire une tarte tatin , il faut compter ${dureeCuissonTarte}`;
+        console.log(phrase);
+
+
+    </script>
+</body>
+</html>
