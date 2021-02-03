@@ -48,6 +48,28 @@
         auteur("Emile", "Zola", 1840);
         // c'est au moment de l'appel de la fonction que l'on détermine la valeur des paramètres de la fonction auteur( )
 
+        function agenda( tableau , index ){
+            console.log(tableau[index]);
+        }
+
+        agenda( ["js","php","jquery"] , 0  );
+        agenda( ["js","php","jquery"] , 2  );
+
+
+        function vehicule ( objet ){
+            console.log(objet.marque);
+        }
+        vehicule({ modele : 206 , marque : "Peugeot" });
+
+        function vehicule2( verif ){
+            if(verif == true){
+                console.log("vous avez une voiture");
+            }else {
+                console.log("vous n'avez pas de voiture");
+            }
+        }
+
+        vehicule2(false);
     </script>
 </body>
 </html>
