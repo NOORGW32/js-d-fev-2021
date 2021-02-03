@@ -36,6 +36,18 @@
 
         c( 5 , 7 ); //au moment de l'appel de la fonction que l'on donne la valeur au paramètre
         c( 10 , -30 ); // au moment de l'appel de la fonction que l'on donne la valeur des paramètres
+
+        c( 5 ); // en PHP erreur fatal => en JS NaN
+
+        function auteur( prenom , nom , date ){ // la fonction auteur a 3 paramètres
+            let phrase = `${prenom} ${nom} est né en ${date}`;
+            console.log(phrase);
+        }
+
+        auteur("Victor" , "Hugo" , 1802);
+        auteur("Emile", "Zola", 1840);
+        // c'est au moment de l'appel de la fonction que l'on détermine la valeur des paramètres de la fonction auteur( )
+
     </script>
 </body>
 </html>
