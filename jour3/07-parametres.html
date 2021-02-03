@@ -51,24 +51,21 @@
         function agenda( tableau , index ){
             console.log(tableau[index]);
         }
-
-        agenda( ["js","php","jquery"] , 0  );
+        agenda( ["js","php","jquery"] , 0  ); // le 1er paramètre est un tableau
         agenda( ["js","php","jquery"] , 2  );
 
-
-        function vehicule ( objet ){
+        function vehicule ( objet ){ // le paramètre est un objet
             console.log(objet.marque);
         }
         vehicule({ modele : 206 , marque : "Peugeot" });
 
-        function vehicule2( verif ){
+        function vehicule2( verif ){ // le paramètre est un boolean
             if(verif == true){
                 console.log("vous avez une voiture");
             }else {
                 console.log("vous n'avez pas de voiture");
             }
         }
-
         vehicule2(false);
     </script>
 </body>
