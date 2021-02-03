@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            "5 x 2 = 10"
+            "5 x 3 = 15"
+            "5 x 4 = 20"
+            "5 x 5 = 25"
+            "5 x 6 = 30"
+            "5 x 7 = 35"
+
+            3 instructions :
+            créer une variable 
+            boolean 
+            augmentation 
+        */
+        // solution 1
+        let i = 2 ; // minimum
+        while(i < 8){ // maximum de la valeur 
+            let phrase = `5 x ${i} = ${ i * 5 }`;
+            console.log(phrase);
+            i++; // augmentation dernière instruction
+        }
+
+        // solution 2
+        console.log("-------------------");
+        i = 1 ;
+        // si vous mettez l'instruction qui fait augmenter la variable i 
+        // vous allez commencer 2 + 1 = 3
+        // donc il faut réduire le minimum de 2 - 1 = 1
+
+        // le même impact sur le maximum 
+        // 7 < 8 => true
+        // augmente 7 + 1 => affiche le 8
+        // 8 < 8 => false => STOP la boucle 
+        // pour s'arrête à 7 il faut réduire le maximum de - 1
+        //  le maximum doit être  7 strictement
+        while(i < 7){ // maximum de la valeur 
+            i++; // augmentation première instruction
+            let phrase = `5 x ${i} = ${ i * 5 }`;
+            console.log(phrase);
+        }
+
+
+    </script>
+</body>
+</html>
