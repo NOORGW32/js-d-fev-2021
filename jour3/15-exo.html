@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let maison = {
+          adresse : "75 rue du Paradis 75010 Paris" ,
+          prix : 1000000000 ,
+          description : function(){
+              let surface = 150 ;
+              let etage = 4 ;
+              let phrase = `ma maison est située à Paris au ${etage}ème étage et il a une surface de ${surface} m2`;
+              console.log(phrase);
+          }
+        }
+        maison.description();
+
+
+        let a = 500 ;
+
+        let b = "300px"
+        let c = "75 rue de la paix";
+        let cp = 75001 ;
+        let duree = "2h30"
+        let heure = 2 ;
+        let minute = 30 ;
+        let heureComplete = `${heure}h${minute}`; // "2h30"
+        // si tu dois stocker dans une variable un chiffre > 1234567890 . -
+
+        let chiffre = -12.4 ;
+
+        // si tu as besoin de stocker une valeur qui contient 1234567890 . - ET des lettres en minuscule ou en majuscule 
+        // il FAUT utiliser ' ' " " ` ` autour de la valeur à stocker 
+
+        let info = "22heure et 30 secondes";
+        let telephone = 060101010101;  // une valeur (il n'y a plus de calcul)
+        let telephone2 = "06 01 01 01 01 01"; 
+        let telephone3 = "06.01" ; 
+
+        // dans le qcm => la valeur est obtenu SUITE A un calcul !! 
+
+        let test = parseInt(12 + 3 + "30" + 2) ;
+               //= 15 + "30" + 2
+               //= "15" + "30" + 2
+               //= "1530" + "2"
+               //= "15302"
+    </script>
+</body>
+</html>
