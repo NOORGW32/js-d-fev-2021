@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 07-parametres.html
+        // création de la fonction a 
+        function a(){
+            let a = 10;
+            let b = 12 ;
+            console.log(a + b);
+        }
+        // la fonction a contient 3 instructions 
+        a();
+
+        // très bien cette fonction elle fait une addition et elle affiche le résultat dans la console du navigateur 
+        // addition deux deux chiffres 10 et 12 => 22 
+
+        // ??? addition 3 et 4 et l'afficher dans la console 
+        function b(){ 
+            let a = 3 ; // instructions dans la fonction c
+            let b = 4 ;
+            console.log(a + b);
+        }
+        b();
+
+        // pour éviter de créer autant de fonction que l'on de valeur possible (infini)
+        // paramètre
+        function c( a , b ){ // a et b sont désormais des paramètres de la fonction c 
+            console.log(a + b);
+        }
+
+        c( 5 , 7 ); //au moment de l'appel de la fonction que l'on donne la valeur au paramètre
+        c( 10 , -30 ); // au moment de l'appel de la fonction que l'on donne la valeur des paramètres
+    </script>
+</body>
+</html>
