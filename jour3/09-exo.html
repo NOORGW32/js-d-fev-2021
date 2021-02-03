@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aireCercle(rayon ){
+            let resultat = 3.14 * rayon ** 2 ; 
+                            // calcul => et le résultat est un chiffre
+                            // tu n'as pas besoin ${} ``
+            let phrase = `un cercle de rayon ${rayon} a une aire de ${resultat}`; 
+                            // lettre => OUI ${} ``
+            console.log(phrase);
+        }
+
+        // appel de la fonction aireCercle
+        aireCercle(44.5);
+        aireCercle(70.43); // il y a deux appels à la fonction 
+
+        // aireCercle(44.5 , 70.43);
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer un nouveau fichier 10-exo.html
+
+    fonction et boolean 
+    1/ déclarer une fonction qui s'appelle min 
+
+    2/ cette fonction dispose de deux paramètres a et b
+
+    3/ cette fonction dispose de deux instructions :
+        - si a est supérieur à b afficher la valeur de b dans la console
+        - si a est inferieur à b afficher la valeur de a dans la console
+        - si a est égal à b afficher la valeur de a dans la console
+
+    4/ exécuter la fonction min pour les valeurs suivantes :
+    a  b
+    4  3,4
+    2  -1
+    0  0
+-->
