@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+         let rueCompleteEspacee = rue + ` ` + codePostal + " " + ville ;
+        console.log(  rueCompleteEspacee );
+
+        let resultat = `un cercle de rayon ${rayon} a une surface de ${surface}`; // concaténation
+
+        console.log(resultat);    
+
+        */
+
+        // pour faire de la concaténation , il existe plusieurs manières 
+
+        let a = "hello";
+        let b = "les amis";
+
+        // 1ère manière de faire de la concaténation
+        let phrase = a + " " + b ;
+        console.log( phrase );
+
+        // 1ère manière alternative
+        let phrase2 = a + ' ' + b ;
+        console.log( phrase2 );
+
+         // 1ère manière alternative
+        let phrase3 = a + ` ` + b ;
+        console.log( phrase3 );
+
+        // 2ème solution possible => ne plus utiliser le symbole +
+        // et de le remplacer par ` ` et les ${ } pour les variables
+
+        let phrase4 = `${a} ${b}`;
+        console.log( phrase4 );
+
+        // ça fonctionne pas 
+        // let phrase5 = ${a} + " " + ${b} ;
+    </script>
+</body>
+</html>
