@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("boucle 1 ------------");
+        for(let i = 4 ; i <= 24 ; i = i + 4){ 
+            let j = i / 4 ;
+            let soluce = `4 X `+ j +` = `+ i ; // concaténation
+            console.log(soluce); // ReferenceError: i is not defined
+        }
+
+        console.log("boucle 2 ------------");
+        for(let j = 2 ; j <= 6; j++){
+            console.log(j);
+        }
+
+        // let soluce = `4 X `+console.log(j)+` = `+console.log(i)
+    </script>
+</body>
+</html>

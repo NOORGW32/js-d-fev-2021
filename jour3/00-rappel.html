@@ -1,0 +1,126 @@
+Javascript :
+url : https://formation.webdevpro.net/js-initiation
+(dans la barre d'adresse pas dans Google)
+login : js
+mdp : js 
+(attention login et mot de passe en minuscule)
+
+=> malik.h@webdevpro.net
+
+--------------------
+
+https://github.com/webdevproformation/js-d-fev-2021
+
+--------------------
+
+1 transtypage
+
+// on ne peut pas additionner des choux et des carottes 
+// litre de café avec des kilos de pomme 
+// liquide // solide => l'addition n'est pas logique 
+
+// en informatique c'est la même chose 
+
+let a = "px" + 12 + true ;
+
+// addition string / number / boolean 
+// dans certain langage => ERREUR FATALE 
+// je ne sais pas additionner des choux et des carottes 
+
+// en javascript est un langage flexible => il va quand même essayer de de traiter le calcul 
+// il va effectuer traitement AUTOMATIQUEMENT (il faut en avoir entendu parlé // les connaitre par coeur => pas logique)
+
+le symbole + => addition et concaténation 
+
+let a = "px" + 12 + true ; // va être transformé en string
+let a = "px" + "12" + "true" ;
+    a = "px12true";
+
+let b = 12 + true ;
+      = 12 + 1 
+      = 13
+
+let c = 14 + false ;
+      = 14 + 0
+      = 14
+
+let d = 1 + 2 + "px" + 3 ;
+      =   3   + "px" + 3
+      =   "3px3"
+
+// 24 => 12px12
+
+//----------------------------
+
+2 boucle 
+
+for(let i = 4 ; i <= 24 ; i = i + 4){ 
+    console.log(i);
+}
+
+for(let j = 2 ; j <= 6; j++){
+    console.log(j);
+}
+
+// les instructions qui doivent être répétées DOIVENT ETRE écrite dans les accolades du for concerné 
+
+let soluce = `4 X `+console.log(j)+` = `+console.log(i)
+
+3 c'est quoi ? == 
+
+le symbole == équivalent => comparer deux valeurs 
+
+let c = 12;
+let d = 30 ;
+
+let e = c == d ;
+//      12 == 30 // == comparaison 
+//    =   false  // = stocker dans la variable e 
+
+4 opérateur unaire
+
+let g = 12 ;
+let h = 2 ;
+let i = g + h ;
+
+// 3 variables pour faire une addition 
+
+// essayer de faire la même chose mais en utilisant 1 seule variable 
+
+let j = 12 ;
+    j = j + 2 ;
+
+// manière raccourcie 
+
+let j = 12 ;
+    j += 2 ; 
+
+// pour augmenter de +1 (spécial ++)
+
+let k = 13;
+    k = k + 1;
+
+let k = 13;
+    k += 1;
+
+let k = 13 ;
+    k++ ;
+
+//j+++; n'existe pas 
+
+cas pratique :
+
+créer un nouveau fichier dans le dossier jour3 qui s'appelle 01-exo.html 
+
+ce fichier contient une balise script 
+
+afficher dans la console le texte suivant 
+
+"5 x 2 = 10"
+"5 x 3 = 15"
+"5 x 4 = 20"
+"5 x 5 = 25"
+"5 x 6 = 30"
+"5 x 7 = 35"
+
+=> il faut utiliser une boucle for pour vous aider à réaliser ce cas 
