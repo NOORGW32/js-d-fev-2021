@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- créer 5 paragraphes vides 
+        p*5
+    -->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // sélectionner le 1er p dans la page 
+        // chainer les modifications de l'élément sélectionné
+        $("p").first().html("1er p").css( "font-size" , 20 ).css( "color" , "blue").css("text-decoration", "underline");
+
+        // chaine => $("p") vous avez appliquer plusieurs transformations en 1 seule instruction
+        // 4 modifications 
+        // .html().css().css().css() => chainage de transformations
+
+        $("p").eq(1)
+              .html("2ème p")
+              .css("text-shadow","2px 2px 2px grey")
+              .css("background", "pink")
+              .css("text-align", "center");
+        // javascript permet de modifier en dynamique le html ET le css d'une page 
+        // dans l'ordre d'exécution 1 html / 2 css / 3 js 
+
+        let styleP3 = { // objet en javascript 
+            "color": "orange",
+            "font-size": "4em", // 16 * 4 = 64px
+            "letter-spacing" : 12 // par défaut jquery va ajouter l'unité px 
+        };
+        // par défaut, dans un navigateur, p => font-size: 16px  = 1em
+        // par défaut, dans un navigateur, p => font-size: 18px  = 1.125em (18/16)
+        // par défaut, dans un navigateur, p => font-size: 10px  = 0.625em (10/16)
+        // par défaut, dans un navigateur, p  je veux augmenter sa taille de 20% => 1.2em 
+        
+        $("p").eq(2)
+              .html("le 3ème paragraphe")
+              .css( styleP3 )
+              .css("border", "1px solid black");
+        // vous pouvez facilement ajouter de nouvelles modifications 
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer le fichier 09-exo.html 
+        div avec la class container
+            une section avec 3 listes
+                ul avec 4 li  
+                ol class jour avec 3 li
+                ol class annee avec 5 li 
+
+    Avec jQuery :
+
+    remplir le 1er li du ul avec le texte jquery
+    remplir le 2eme li du ul avec le texte bootstrap
+    remplir tous les li de l'élément avec la class jour avec le texte : 02/12/2019
+    pour la dernière liste, remplir le premier li avec le texte : bonjour
+    pour la dernière liste, remplir le dernier li avec le texte : final
+
+-->
