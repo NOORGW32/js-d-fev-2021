@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            align-items: flex-start;
+        }
+        header ul{
+            margin: 0;
+            list-style: none;
+        }
+        header>ul{
+            display: flex;
+        }
+        header>ul>li{
+            margin-right: 15px;
+        }
+        .sous-menu ul{
+            padding: 0;
+            display: none;
+        }
+        .show{
+            display: block !important;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button>menu</button>
+        <ul>
+            <li>Accueil</li>
+            <li class="sous-menu">Blog
+                <ul>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>CSS</li>
+                </ul>
+            </li>
+            <li>Nous contacter</li>
+        </ul>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // le sous menu 
+        $(".sous-menu").click(function(){
+            if($(".sous-menu ul").attr("class") == "show"){
+                $(".sous-menu ul").attr("class","");
+            }else {
+                $(".sous-menu ul").attr("class","show");
+            }
+        });
+        // le bouton
+        $("header button").click(function(){
+            if($("header>ul").attr("class") == "hide"){
+                $("header>ul").attr("class","");
+            }else {
+                $("header>ul").attr("class","hide");
+            }
+        });
+    </script>
+</body>
+</html>
