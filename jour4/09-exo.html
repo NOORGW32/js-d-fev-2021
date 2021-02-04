@@ -38,13 +38,30 @@
         $(".jour li").html("02/12/2019");
         $(".annee li").first().html("bonjour");
         $(".annee li").last().html("final");
-
         // je veux sélectionner la dernière liste 
         // je veux sélectionner le 2ème li 
-
         $("ol").last().find("li").eq(1).html("je suis le 2ème élément");
-
         // vous pouvez utiliser la même syntaxe que le sélecteur css dans un fichier .css 
     </script>
 </body>
 </html>
+<!-- 
+    jquery permet de modifier rapidement et facile une page web 
+
+    $("...") => sélecteur css p .class #id .annee li
+    par défaut lorsque vous sélectionnez un élément avec jquery 
+    => liste 
+        .first()
+        .last()
+        .eq(0)
+        .find() => rechercher dans une balise sélectionner
+    => chainer => ajouter une autre méthode
+        .html() => remplir avec du texte / html 
+        .css() => modifier le css de l'élément sélectionné
+           .css( "propriété", "valeur" )
+           .css({ "propriété": "valeur", "propriété": "valeur" })
+
+    // modifier les attributs d'une balise avec jquery
+    // Evenement 
+    // => animation // site 1 page // qcm 
+-->
