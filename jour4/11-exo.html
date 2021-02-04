@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <img src="" alt="">
+    <ol>
+        <!-- li*3 -->
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // 1 variable => toutes les infos 
+        
+        let data = {
+            h1 : {
+                texte : "titre",
+                style : {
+                    "text-decoration": "underline",
+                    "text-align" : "center"
+                }
+            },
+            img : {
+                attr : "https://via.placeholder.com/400x200",
+                style : {
+                    "box-shadow" : "2px 2px 2px grey"
+                }
+            },
+            ol : {
+                attr : "a"
+            },
+            li : [
+                { 
+                    texte : "item 1",
+                    style : {
+                        color : "green"
+                    }
+                },
+                {
+                    texte : "item 2",
+                    style : {
+                        color : "pink",
+                        "font-size" : "1.2em"
+                    }
+                },
+                {
+                    texte : "last item",
+                    style : {
+                        "text-align" : "center",
+                    }
+                }
+             ]
+        };
+
+        // utiliser dans tous les sélecteurs 
+        $("h1").html(data.h1.texte).css(data.h1.style);
+        $("img").attr("src",data.img.attr).css(data.img.style);
+        $("ol").attr("type",data.ol.attr);
+        $("ol li").first().html(data.li[0].texte).css(data.li[0].style);
+        $("ol li").eq(1).html(data.li[1].texte).css(data.li[1].style);
+        $("ol li").eq(2).html(data.li[2].texte).css(data.li[2].style);
+    </script>
+</body>
+</html>
