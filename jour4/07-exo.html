@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Emmet 
+        h1+h2+p*3+h2+p*2
+    -->
+    <h1></h1>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <!-- télécharger jquery la librairie-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- écrire notre script -->
+    <script>
+        $("h1").html("html");
+        $("h2").first().html("partie 1");
+        // $("h2").eq(0).html("partie 1");
+        $("h2").last().html("Conclusion");
+        $("p").html("lorem ipsum");
+        $("p").eq(3).html("le texte de la conclusion");
+        $("p").eq(4).html("fin");
+    </script>
+</body>
+</html>
