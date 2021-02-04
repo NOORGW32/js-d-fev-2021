@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <img src="" alt="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // sélectionner des balises html avec jquery
+        // rempli avec du texte => .html("le texte à insérer")
+        $("h1").html("je suis le titre principal")
+               .attr( "id" , "titre"  )
+               .attr("class" , "first")
+               .attr("style" , "color:red");
+        // en plus de remplir la balise avec du texte .html()
+        // en plus ajouter des attributs
+
+        // récupérer les valeurs des balises 
+        // récupérer la valeur de l'attribut src dans la balise img 
+
+        let adresseImage = $("img").attr("src");
+        $("p").html(adresseImage);
+
+        // faire des tests = if(){}
+        if( $("img").attr("src") != "" ){
+            $("img").css("border", "1px solid black");
+        }else {
+            $("img").attr("src", "https://via.placeholder.com/200x100");
+        }
+    </script>
+</body>
+</html>
