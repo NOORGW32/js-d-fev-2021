@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <p></p>
+    <ul>
+        <li class="first"></li>
+        <li id="second"></li>
+        <li class="last"></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // juste avant les balises nous avons plein de balises html 
+        // jquery va nous permettre de facilement d'accéder aux balises et de les modifier
+        $("h1").html("titre principal");
+        $("h2").html("sous titre");
+        $("p").html("sommaire");
+        $(".first").html("partie 1"); // utilise la même syntaxe que les sélecteurs css 
+        $("#second").html("partie 2"); // sélectionne la balise qui a l'id="second" 
+        $(".last").html("conclusion");
+    </script>
+</body>
+</html>
+<!-- 
+    cas pratique créer le fichier 05-exo.html 
+    qui contient une balise h1
+    qui contient 4 balises p et 
+        la 1ère balise p dispose de la class item1
+        la 2ème balise p dispose de la class item2
+        la 3ème balise p dispose de la class item3
+        la 4eme balise p dispose de la class item4
+    télécharger jquery
+    ajouter une balise script et réaliser les modifications du DOM suivant
+        remplir la balise h1 avec le texte suivant : "EXO"
+        remplir la balise ayant la class item1 avec le texte présentation
+        remplir la balise ayant la class item2 avec le texte utiliser jquery
+        remplir la balise ayant la class item3 avec le texte informatique
+        remplir la balise ayant la class item4 avec le texte fin
+-->
