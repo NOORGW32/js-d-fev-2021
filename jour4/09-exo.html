@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <!-- ul>li*4 -->
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!-- ol.jour>li*3 -->
+            <ol class="jour">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <!-- ol.annee>li*5 -->
+            <ol class="annee">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("ul li").first().html("jquery");
+        $("ul li").eq(1).html("bootstrap");
+        $(".jour li").html("02/12/2019");
+        $(".annee li").first().html("bonjour");
+        $(".annee li").last().html("final");
+
+        // je veux sélectionner la dernière liste 
+        // je veux sélectionner le 2ème li 
+
+        $("ol").last().find("li").eq(1).html("je suis le 2ème élément");
+
+        // vous pouvez utiliser la même syntaxe que le sélecteur css dans un fichier .css 
+    </script>
+</body>
+</html>
