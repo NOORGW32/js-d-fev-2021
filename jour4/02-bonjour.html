@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        juste avant la balise script que l'on vient de créer 
+        nous télécharger la librairie javascript 
+        jquery.com > Download >  CDN (Content Delivery Network => serveur qui vont fournir la librairie de manière rapide )
+    -->
+    <p></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let phrase = `bonjour les amis, je sais installer jQuery`;
+        // avec jquery sélectioner la balise p et tu vas la remplir avec le contenu de la variable phrase 
+        $("p").html(phrase);
+    </script>
+</body>
+</html>
+<!-- 
+    cas pratique créer dans le dossier jour4 un nouveau fichier 
+    le fichier s'appelle 03-exo.html 
+
+    dans la balise body 
+        une balise paragraphe
+        télécharger jquery via la balise script disponible dans le cdn de Google 
+        une balise script 
+            une variable information qui contient le texte suivant :
+                    jquery permet de facilement ajouter du texte dans une page web !!! 
+            utiliser la fonction jquery 
+                $() pour remplir la balise p avec le texte contenu dans la variable information
+
+-->
