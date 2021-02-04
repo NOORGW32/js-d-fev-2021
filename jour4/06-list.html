@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        créer 10 paragraphes vides
+        p*10 Emmet 
+        !Enter
+    -->
+        <p></p>
+        <p class="item1"></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            // si jamais vous écrire l'instruction suivante
+            $("p").html("un peu de texte");
+            // jquery va remplir TOUTES les balises p de la page 
+            $(".item1").html("paragraphe particulier");
+
+            $("p").first().html("je suis le 1er p");
+            $("p").last().html("dernier p");
+            $("p").eq(8).html("je suis le 9ème p"); 
+            $("p").eq(1).html("je suis le dernier qui parle");
+            // la dernière instruction exécutée qui est visible
+            // le 1er p dans la page  .first() .eq(0) 
+            //  égal equal (comme pour un tableau la 1ère balise est indexé avec le chiffre 0)
+            // html et css => jquery facile à retenir
+        </script>
+</body>
+</html>
