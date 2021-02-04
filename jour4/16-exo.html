@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex; /*bouton et ul l'un à côte de l'autre*/
+            align-items: flex-start;/*le bouton garde sa hauteur*/
+        }
+        header ul{
+            margin: 0;
+            list-style: none;
+        }
+        header>ul{ /*appliquer la mise en forme uniquement ul enfant direct*/
+            display: flex;
+        }
+        header>ul>li{ /*appliquer la mise en forme uniquement ul enfant direct*/
+           margin-right: 10px;
+        }
+        .sous-menu ul{
+            padding: 0;
+            position: absolute;
+            display: none;
+        }
+        .sous-menu ul.show{
+            display: block !important;
+        }
+        .hide{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <button>Masquer</button>
+        <ul>
+            <li>Accueil</li>
+            <li class="sous-menu">
+                Catégorie 
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+                <ul>
+                    <li>Informatique</li>
+                    <li>Faq</li>
+                </ul>
+            </li>
+            <li>Contacter</li>
+        </ul>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("header button").click(function(){
+            if($("header>ul").attr("class") != "hide"){
+                $("header>ul").attr("class", "hide");
+                $("header button").html("Afficher")
+            }else {
+                $("header>ul").attr("class", "")
+                $("header button").html("Masquer")
+            }
+        });
+
+        $(".sous-menu").click(function(){
+            if($(".sous-menu ul").attr("class") != "show"){
+                $(".sous-menu ul").attr("class", "show");
+                $(".sous-menu svg").css("transform", "rotate(180deg)")
+            } else {
+                $(".sous-menu ul").attr("class", "");
+                $(".sous-menu svg").css("transform", "rotate(0deg)")
+            }
+        });
+        // bootstrap 
+
+    </script>
+</body>
+</html>
