@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>action 1</button>
+    <p></p>
+    <hr><!-- trait en html-->
+    <button>action 2</button>
+    <p></p>
+    <hr>
+    <button>action 3</button>
+    <p></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // sélectionner le 1er bouton 
+        // click()
+        // lorsque l'on va cliquer sur le 1er bouton 
+        // déclencher une action 
+        // cette action va être définit comme paramètre de la méthode click
+        // callback => la méthode click() prendre comme paramètre une fonction
+        $("button").first().click(function(){ 
+            $("p").first().html("je viens de cliquer sur le premier bouton");
+        });
+
+        // deuxième exemple 
+        // lorsque je clique sur le 2ème bouton 
+        // alors remplir le 2ème p de la page avec le texte suivant 
+        // j'ai cliqué sur le bouton 2
+        // et que le text dans le p soit de couleur blue
+
+        $("button").eq(1).click( function(){ 
+            $("p").eq(1).html("j'ai cliqué sur le bouton 2").css("color", "blue");
+        });
+
+        // cas pratique 
+        // lorsque le clique sur le dernier bouton de la page 
+        // remplir le dernier p de la page avec le texte fin !!
+        // mettre le p augmenter taille de police + 20% et lui mettre du text en ombre portée !
+        // oui il est possible de demander des données à PHP depuis javascript 
+        // ajax => click => demande à PHP => base de données => tableau => PHP => javascript => afficher 
+
+        $("button").last().click( function(){ 
+            let style = {
+                "font-size": "1.2em",
+                "text-shadow" : "2px 2px 2px black"
+            };
+
+            $("p").last()
+                  .html("fin !!")
+                .css(style);
+        });
+
+    </script>
+</body>
+</html>
