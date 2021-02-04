@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        header{
+            display: flex;
+        }
+        header ul{
+            margin: 0;
+            display: flex;
+            list-style: none;
+        }
+        header ul li{
+            margin-right: 0.8em;
+        }
+        .hide{ /* ajouter en dynamique grâce à jQuery*/
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <button>Menu</button>
-        <ul>
+        <ul >
             <li>Accueil</li>
             <li>Présentation</li>
             <li>Nous Contacter</li>
         </ul>
     </header>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("header button").click( function(){
+            if( $("header ul").attr("class") == "hide"){
+                $("header ul").attr("class","");
+            } else {
+                $("header ul").attr("class","hide");
+            }
+        })
+    </script>
 </body>
 </html>
