@@ -14,8 +14,14 @@ body{
     background: url("img/t.jpg");
     background-size: cover ;
     color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 /*en tête */
+
 .container > header{
     display: flex;
     align-items: flex-start;
