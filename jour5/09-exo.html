@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --rose-clair : #ffe8e8;
+            --rose-fonce : #ff9292;
+        }
+        body{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 0;
+        }
+        nav{
+            background: var(--rose-fonce);
+            color: var(--rose-clair);
+            height:100vh;
+            padding: 0;
+            overflow: hidden;
+            width: 0;
+            transition: 1s width , 1s padding;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        nav button, nav li{
+            white-space:  pre;
+        }
+        nav.show{
+            width: 110px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="menu">Afficher Menu</button>
+    <nav>
+        <button>Masquer Menu</button>
+        <ul>
+            <li>Accueil 🧭</li>
+            <li>Présentation 🛎️</li>
+            <li>Contact ⏱️</li>
+        </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(".menu").click(function(){
+            $("nav").attr("class", "show")
+        });
+        $("nav button").click(function(){
+            $("nav").attr("class", "")
+        });
+    </script>
+</body>
+</html>

@@ -8,8 +8,14 @@
         body{
             display: flex;
             align-items: flex-start;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .menu{
+            margin: 5px;
         }
         nav{
+            height: 100vh;
             background: #ffee93;
             color: #9b5151;
             padding: 5px 0;
@@ -17,16 +23,21 @@
             width:0;
             overflow: hidden;
             /*autre technique pour masquer un élément */
-            transition: 1s width;
+            transition: 1s width , 1s padding;
+        }
+        nav button, nav ul li{
+            white-space:  pre;
         }
         nav ul{
             list-style: none;
             padding: 0;
             display: grid;
         }
+        
         /* la règle que l'on va ajouter en dynamique avec jquery*/
         nav.show{
-            width: 150px ;
+            padding: 5px 10px;
+            width: calc(140px - 20px) ;
         }
         /* l'expérience ! */
     </style>
@@ -50,11 +61,11 @@
         // afficher le menu 
         $(".menu").click(function(){
             $("nav").attr("class", "show");
-        })
+        });
         // masquer le menu 
         $("nav button").click(function(){
             $("nav").attr("class", "");
-        })
+        });
     </script>
 </body>
 </html>
