@@ -1,0 +1,59 @@
+// début de semaine => javascript pur et dur 
+// le vocabulaire de base du langage
+// variable 
+//   string / number / boolean / tableau / objet 
+// syntaxe spéciale 
+// opération + calcul possible 
+
+// structures 
+// if /if else if else 
+// for 
+// function 
+
+// => obligatoire pour pouvoir écrire du code 
+
+// hier => utiliser javascript dans le contexte de la page web 
+
+// remplir mes pages web 
+
+// utiliser tous ces concepts avec en + librairie => jQuery 
+
+// permet de sélectionner facilement une ou plusieurs balises html 
+
+$("secteur css")
+
+si j'ai dans ma page 
+<p></p>
+
+$("p")
+
+<h2></h2>
+<h2></h2>
+
+$("h2") => sélectionner toutes les balises h2 dans la page 
+
+// si j'ai un seule balise 
+
+$("p").html("écrire du html dans la balise").css('font-size', 20);
+
+// si j'ai plusieurs balises sélectionnées
+
+$("h2").first()
+       .last()
+       .eq(0) // 
+
+$("h2") == [ {}, {} ]
+
+$("h2").first() = {} // récupère le 1er élément dans mon tableau
+$("h2").eq(1) = {} // récupére le 2ème élément dans le tableau 
+
+$("h2").eq(1) = { 
+
+    html : function(){}, // propriété qui stocke une fonction = Méthode 
+    css : function(){},
+    attr : function(){} // récupérer la valeur // ajouter / créer les attributs de la balise sélectionnée
+    click : function(){} 
+
+}
+
+$("h2").eq(1).html()
