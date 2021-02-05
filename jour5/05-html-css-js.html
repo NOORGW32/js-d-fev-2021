@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            transition: 1s color , 2s font-size , 4s margin-left ;
+            /*animation => via une règle css !! */
+        }
+        .info{
+            color:red;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button>Action1</button>
+    <p>un peu de texte</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("button").click(function(){
+            if($("p").attr("class") != "info"){ // != différent
+                // est que la balise p contient une class qui n'a pas la valeur "info"
+                $("p").attr("class", "info"); // ajouter dans la balise p avec class="info"
+            }else{ // sinon
+                $("p").attr("class", ""); // remplacer la valeur de l'attribut class du p par ""
+            }
+        });
+        // pause !important 
+        // pause café => 10h52 bon café !
+    </script>
+</body>
+</html>
