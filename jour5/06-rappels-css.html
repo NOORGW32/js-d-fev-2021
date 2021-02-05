@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red !important;
+        }
+        .introduction{
+            color: blue !important; /*deux règles css qui se contre disent*/
+        }
+        /* priorité en css =>
+        en fonction du sélecteur que vous allez utiliser 
+        css va choisir quelle est la règle à utiliser
+        ET quelles sont les règles à ignorer */
+        p.introduction{
+            color:yellow;
+        }
+        /*
+            plus le sélecteur est précis , ce sera les règles dans ce 
+            sélecteur qui vont être gardées par css 
+            // !important => permet de casser les priorités 
+
+        */
+
+        ul .element1{
+            display: none;
+        }
+        .show{
+            display: block !important;
+        }
+      /*   ul .element1.show{
+            display: block;
+        } */
+        /* règles de priorité en css*/
+    </style>
+</head>
+<body>
+    <!-- 
+        lorsque l'on code en javascript 
+        Dépendant de html et css 
+        en fonction que ce vous avez écrit dans ces langages
+        => ça va être long en javascript pour écrire du js
+    -->
+    <p class="introduction">lorem</p>
+    <ul>
+        <li class="element1 show">item1</li>
+    </ul>
+</body>
+</html>
