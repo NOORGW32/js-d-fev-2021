@@ -15,12 +15,37 @@
         <div>
             <!-- p*3>lorem30 -->
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus dicta nulla sint id aliquam minima excepturi iure similique ab iste recusandae ad quod tempora, ex repellat. Voluptas, eos soluta.</p>
-            <p>Quos est doloribus repellat perferendis ex eveniet voluptates earum neque culpa exercitationem nobis, voluptatibus ad repudiandae dignissimos similique aut hic voluptatem deserunt debitis illo nihil. Possimus neque minima libero sed.</p>
             <p>Doloremque excepturi atque illo enim ea, maiores temporibus quas eveniet obcaecati fuga odit sapiente cum. Magnam, vel earum? Iure vel eligendi sed repellat consequatur beatae explicabo, repellendus nostrum placeat est?</p>
+            <p>Quos est doloribus repellat perferendis ex eveniet voluptates earum neque culpa exercitationem nobis, voluptatibus ad repudiandae dignissimos similique aut hic voluptatem deserunt debitis illo nihil. Possimus neque minima libero sed.</p>
         </div>
     </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wTFThzLcrOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- propagation / bubbling 
         
     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //$(".onglet p").css("display","none").first().css("display", "block");
+        $(".onglet p").hide().first().show();
+        $(".onglet button").click(function(){
+            let index = $(this).data("index");
+            $(".onglet p").hide().eq(index).show();
+        });
+    </script>
 </body>
 </html>
+<!-- 
+    créer une nouvelle page html 13-exo.html 
+    mettre en place dn système d'onglet qui contient 5 onglets
+        Accueil
+        Présentation
+        Blog
+        Vidéo
+        Nous contacter
+
+    cliquer sur accueil = p avec 3 mots dedans
+    cliquer sur Présentation = <ul> avec 5 li
+    cliquer sur Blog = iframe youtube
+    cliquer sur Vidéo = iframe youtube
+    cliquer sur Nous contacter = iframe google map
+-->
