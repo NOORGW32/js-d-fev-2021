@@ -47,13 +47,17 @@
             <li>Contact ⏱️</li>
         </ul>
     </nav>
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(".menu").click(function(){
             $("nav").attr("class", "show")
+            $(".menu").css("opacity", 0);
         });
         $("nav button").click(function(){
             $("nav").attr("class", "")
+            $(".menu").css("opacity", 1);
         });
     </script>
 </body>
