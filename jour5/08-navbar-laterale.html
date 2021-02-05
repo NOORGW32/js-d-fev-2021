@@ -22,12 +22,13 @@
         nav ul{
             list-style: none;
             padding: 0;
+            display: grid;
         }
         /* la règle que l'on va ajouter en dynamique avec jquery*/
         nav.show{
             width: 150px ;
         }
-
+        /* l'expérience ! */
     </style>
 </head>
 <body>
@@ -51,10 +52,14 @@
             $("nav").attr("class", "show");
         })
         // masquer le menu 
-
         $("nav button").click(function(){
             $("nav").attr("class", "");
         })
     </script>
 </body>
 </html>
+
+<!-- 
+    cas pratique créer une fichier 09-exo.html 
+    la même chose MAIS au lieu d'apparaitre à gauche => le menu apparait à droite de la page web !! 
+-->
