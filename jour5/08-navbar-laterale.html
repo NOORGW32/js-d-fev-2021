@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: flex-start;
+        }
+        nav{
+            background: #ffee93;
+            color: #9b5151;
+            padding: 5px 0;
+            /* width: 150px; */
+            width:0;
+            overflow: hidden;
+            /*autre technique pour masquer un élément */
+            transition: 1s width;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        /* la règle que l'on va ajouter en dynamique avec jquery*/
+        nav.show{
+            width: 150px ;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        08-navbar-laterale.html
+    -->
+    <nav>
+        <button>masquer le menu</button>
+        <ul>
+            <li>Accueil 🐶</li>
+            <li>Présentation 🦊</li>
+            <li>Contact 🦝</li>
+        </ul>
+        <!-- https://emojipedia.org/ -->
+    </nav>
+    <button class="menu">Afficher le menu</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // afficher le menu 
+        $(".menu").click(function(){
+            $("nav").attr("class", "show");
+        })
+        // masquer le menu 
+
+        $("nav button").click(function(){
+            $("nav").attr("class", "");
+        })
+    </script>
+</body>
+</html>
