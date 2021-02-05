@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action 1</button>
+    <p id="exemple1" class="introduction">un peu de texte</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        // si je clique une première fois sur le button => masquer le p 
+        // si je reclique une première fois  sur le button  => afficher le p 
+
+        $("button").click(function(){
+            if($("p").attr("class") == "introduction"){
+                $("p").css("display", "none"); // masquer
+                $("p").attr("class", "");
+            }else {
+                $("p").css("display", "block");
+                $("p").attr("class", "introduction");
+            }
+        });
+    </script>
+</body>
+</html>
+<!-- 
+    cas pratique créer le fichier 04-exo.html
+    dans ce fichier vous avez 
+        button qui contient le texte action 1
+        un p qui a une class exemple et qui contient le texte bonjour
+
+    grâce à javascript et jquery réalisez l'animation suivante
+
+        si je clique sur le bouton une première fois => le p va prendre une taille de 30px
+        si je reclique sur le bouton une deuxième fois => le p va prendre une taille de 16px
+
+-->
