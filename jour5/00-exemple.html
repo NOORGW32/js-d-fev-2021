@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="exemple1" class="introduction">un peu de texte</p>
+    <!-- 
+        dans la balise p j'ai stocké les informations suivantes :
+        deux attributs id et class
+        un contenu = un peu de texte
+        je veux la manipuler => 
+            1/ récupérer des informations qui sont stockées dans la balise 
+            2/ modifier des informations les informations dans les attributs ou modifier le texte dans la balise
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // je veux récupérer le contenu de l'attribut class de la balise p 
+        let className = $("p").attr("class"); // string
+        console.log(className);
+        // si la balise p dispose d'une attribut class qui a la valeur "introduction" alors je vais changer son contenu
+        if( $("p").attr("class") == "introduction" ){
+        //    "introduction"    == "introduction"
+        //            true 
+            $("p").html("le texte est modifié");
+        }
+    </script>
+</body>
+</html>

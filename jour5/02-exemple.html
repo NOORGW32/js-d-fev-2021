@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action 1</button>
+    <p id="exemple1" class="introduction">un peu de texte</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // lorsque je clique sur le bouton 
+        // si le p dispose de la class="introduction"
+            // je change le text dans la balise "autre texte"
+            // je vais enlever la valeur stockée dans l'attribut class=""
+        $("button").click(function(){
+            if($("p").attr("class") == "introduction"){
+                $("p").html("autre texte");
+                $("p").attr("class", ""); // donner la class de p la valeur ""
+            }else{
+                $("p").html("un peu de texte");
+                $("p").attr("class", "introduction"); // donner la class de p la valeur "introduction"
+            }
+        } );
+
+    </script>
+</body>
+</html>
