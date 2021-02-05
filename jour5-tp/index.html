@@ -12,7 +12,18 @@
             <button>Menu</button>
             <ul>
                 <li>Accueil</li>
-                <li>Présentation</li>
+                <li class="sous-menu">Présentation 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                      </svg>
+                    <ul>
+                        <li>Lorem.</li>
+                        <li>Maxime?</li>
+                        <li>Fugiat.</li>
+                        <li>Ex!</li>
+                        <li>Architecto!</li>
+                    </ul>
+                </li>
                 <li>Nous contacter</li>
             </ul>
             <form action="">
@@ -36,13 +47,48 @@
                 </div>
             </section>
             <section>
-                <img src="https://via.placeholder.com/300x200" alt="">
+                <img src="https://via.placeholder.com/600x200" alt="">
             </section>
         </main>
         <footer>
             <p>Malik H - &copy; 2021 - 🦁 🦄 </p>
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // menu
+        $(".container>header button").click(function(){
+            if( $("header ul").attr("class") == "hide"){
+                $("header ul").attr("class", "");
+                $("header ul").show();
+                $(".container>header button").html("Masquer");
+            }else {
+                $("header ul").attr("class", "hide");
+                $("header ul").hide();
+                $(".container>header button").html("Afficher");
+            }
+        });
+    </script>
+    <script>
+        // onglet
+        $(".onglet p").hide().first().show();
+
+        $(".onglet button").click(function(){
+            let index = $(this).data("index");
+            $(".onglet p").hide().eq(index).show();
+        })
+    </script>
+    <script>
+        // sous menu dans le navigation 
+        $(".sous-menu").click(function(){
+            if($(".sous-menu ul").attr("class") == "show"){
+                $(".sous-menu ul").attr("class", "");
+            }else {
+                $(".sous-menu ul").attr("class", "show");
+            }
+        })
+    </script>
 </body>
 </html>
 
@@ -53,7 +99,7 @@
         1 dans la zone de menu => cliquer sur le bouton menu > masquer le menu
         si vous recliquez sur ce bouton => affiche !! 
 
-        2 dans la zone onglet =< mettre en place un système d'onglet 
+        2 dans la zone onglet => mettre en place un système d'onglet 
 
         3 pour les plus forts => ajouter un sous menu dans la barre de menu 
 

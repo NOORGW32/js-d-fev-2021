@@ -32,11 +32,18 @@ body{
 .container > header button{
     margin-right: 30px;
 }
+
 header ul{
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.sous-menu ul{
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    padding: 10px;
+    display: none;
 }
 header ul li{
     margin-right: 10px;
@@ -74,4 +81,9 @@ footer{
     padding: 1px;
     background:rgba(0,0,0,0.4);
     text-align: center;
+}
+
+/* spécial pour le js*/
+.show{
+    display: flex !important;
 }
